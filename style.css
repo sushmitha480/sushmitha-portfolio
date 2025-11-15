@@ -1,0 +1,556 @@
+/* ------------------ Global Styles ------------------ */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ------------------ Navigation ------------------ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+nav .menus {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav .menus li a {
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+nav .menus li a.active,
+nav .menus li a:hover {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+/* ------------------ Hero Section ------------------ */
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+}
+
+.Content {
+  flex: 1 1 500px;
+  text-align: left;
+}
+
+.Content p.spacs {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.twobtn {
+  margin-top: 20px;
+}
+
+.resume-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #45a049;
+}
+
+.Imgb {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Imgb img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.Imgb .icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* ------------------ Section Titles ------------------ */
+.Myser h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #333;
+  position: relative;
+}
+
+.Myser h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #4caf50;
+  margin: 10px auto 0;
+  border-radius: 2px;
+} */
+body{
+  font-family:'poppins',sanserif;
+}
+.navbarDark {
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px);
+  color: #000 !important;    
+  z-index:2;
+}
+/*.navbarDark a{
+  color: #000 !important; 
+}*/
+.fade-in {
+  animation: fadeIn 1s ease-in;
+  animation-delay: 1s; /* Delay of 2 seconds */
+  animation-fill-mode: both; /* Retain final state */
+}
+.zoom-in {
+  animation: zoomIn 1s ease-in;
+  animation-delay: 1s; /* Delay of 2 seconds */
+  animation-fill-mode: both; /* Retain final state */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#583ebc;
+  padding:5px;
+  border-radius:50px;
+  position:sticky;
+  top:2px;  
+  margin:10px;
+  z-index:2;
+}
+
+.menus{
+  display:flex;
+  justify-content:space-around;
+  width:70%;
+}
+ulli{
+  display-inline:block;
+  list-style:none;
+}
+a{
+  text-decoration:none;
+  font-size:18px;
+  font-weight:600px;
+  color:#fff;
+  }
+.active{
+  background:#ddf;
+  padding:10px;
+  /* color:#000; */
+  border-radius:50px;}
+.logo{
+  background:#fff;
+ padding:10px;color:#000;
+  border-radius:20px;
+}
+
+.slide{
+  display:flex;  
+  flex-wrap:wrap;
+  background:#DDF;
+  padding:40px 20px;
+  border-radius:20px;
+  position:relative;
+}
+.Content{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  width:50%;
+}
+.twobtn{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  margin:10px;
+  
+}
+.twobtn button{
+  border:none;
+  padding:12px 8px;
+  border-radius:25px;
+  width:200px;
+background-color: lightcoral;
+  /* background:#583ebc; */
+  color:#fff;
+  margin:10px;
+}
+.tech{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.tech h5{
+  flex-direction:column;
+}
+.Imgb{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 40%;
+  
+  position:relative;  
+  }
+
+/* ------------------ About Section ------------------ */
+.about {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.myex h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222; /* dark text */
+}
+
+.myex p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color:black; /* normal text color */
+}
+
+.bold-black {
+  font-weight: 700; /* bold */
+  color: #000;      /* black color */
+}
+
+/* ------------------ Skills Section ------------------ */
+.mcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 800px; /* container smaller to fit 2 cards per row */
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+.cbox {
+  flex: 1 1 calc(50% - 15px); /* 2 cards per row */
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.cbox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cbox .icons {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.cbox h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cbox h4 {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive: single column on mobile */
+@media screen and (max-width: 768px) {
+  .cbox {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* ------------------ Projects Section ------------------ */
+.gcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+.gbox {
+  flex: 1 1 250px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.gbox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gbox img.gimg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.pinfo {
+  padding: 15px;
+}
+
+.pinfo .Txt {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.pinfo .pdesc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ------------------ Contact Section ------------------ */
+#contact {
+  padding: 60px 20px;
+  background: #fdfdfd;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.add {
+  flex: 1 1 300px;
+}
+
+.add p {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.add h3 {
+  margin-bottom: 15px;
+}
+
+.add hr {
+  margin-bottom: 20px;
+  border: 0.5px solid #ddd;
+}
+
+.enquiry {
+  flex: 1 1 400px;
+}
+
+.enquiry .floating {
+  margin-bottom: 15px;
+}
+
+.enquiry label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.enquiry input,
+.enquiry textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.enquiry textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.sub {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sub:hover {
+  background-color: #45a049;
+}
+
+/* ------------------ Social Media Section ------------------ */
+#social-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+#social-section h2 {
+  margin-bottom: 10px;
+}
+
+#social-section p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.social-links a {
+  font-size: 2rem;
+  color: #333;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #4caf50;
+}
+
+/* ------------------ Footer ------------------ */
+footer.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+footer.footer a.fot {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+footer.footer a.fot:hover {
+  color: #3e8e41;
+}
+
+/* ------------------ Buttons ------------------ */
+.mybtn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.mybtn:hover {
+  background-color: #45a049;
+}
+
+/* ------------------ Responsive ------------------ */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #home {
+    flex-direction: column;
+  }
+
+  .Content {
+    text-align: center;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+  
+  .mcontainer, .gcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Imgb img {
+    width: 200px;
+  }
+
+  .about {
+    text-align: center;
+  }
+}
